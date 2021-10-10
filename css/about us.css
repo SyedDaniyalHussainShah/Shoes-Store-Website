@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.logo{
+    width: 100px;
+    
+}
+body
+{
+    background-color: #0f0f0f;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+.header
+{
+    background-color:#393e46;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    border-bottom: white;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+  
+}
+.header ul
+{
+    display: inline-flex;
+    list-style: none;
+}
+.header ul li
+{
+    width:150px;
+    margin:15px;
+    padding:15px;
+}
+.header ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.current, .header ul li:hover
+{
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+.menu
+{
+     display: none;
+ }
+ .header ul li:hover .menu ul li:hover{
+    border-bottom-style: solid;
+    border-bottom-color: black ;
+ }
+.header ul li:hover .menu
+{
+    display: block;
+    position: absolute;
+    background-color:#393e46;
+    margin-top: 15px;
+    margin-left: -15px;
+    z-index: 2;
+}
+.header ul li:hover .menu ul
+{
+    display: block;
+    margin: 10px;
+}
+.header ul li:hover .menu ul li
+{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    color: white;
+}
+
+.header ul li:hover .menu ul li a:hover
+{
+    color:black;
+}
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 60%;
+}
+hr{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: white;
+    border-bottom-style: ridge;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+}
+.content h1{
+    text-align: center;
+}
+span{
+    font-weight: bolder;
+}

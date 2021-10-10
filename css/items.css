@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.logo{
+    width: 100px;
+    
+}
+body
+{
+    background-color: #0f0f0f;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+.header
+{
+    background-color:#393e46;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    border-bottom: white;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+  
+}
+.header ul
+{
+    display: inline-flex;
+    list-style: none;
+}
+.header ul li
+{
+    width:150px;
+    margin:15px;
+    padding:15px;
+}
+.header ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.header ul li:hover
+{
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+.menu
+{
+     display: none;
+ }
+ .header ul li:hover .menu ul li:hover{
+    border-bottom-style: solid;
+    border-bottom-color: black ;
+ }
+.header ul li:hover .menu
+{
+    display: block;
+    position: absolute;
+    background-color:#393e46;
+    margin-top: 15px;
+    margin-left: -15px;
+    z-index: 2;
+}
+.header ul li:hover .menu ul
+{
+    display: block;
+    margin: 10px;
+}
+.header ul li:hover .menu ul li
+{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    color: white;
+}
+
+.header ul li:hover .menu ul li a:hover
+{
+    color:black;
+}
+.buy{
+    background-color: #433d3c;
+    top: 10%;
+    position: fixed;
+    width: 20%;
+    right: 0;
+    height: 100%;
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: thin;
+    padding: 20px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.price-now{
+    color: crimson;
+    font-weight: bold;
+    display: inline;
+}
+.price-before{
+    text-decoration: line-through;
+    font-weight: bold;
+    display: inline;
+}
+
+.shoe-size h3{
+    font-weight: bold;
+}
+
+.size{
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+button{
+    background-color: black;
+    color: white;
+    font-size: large;
+    width: 50%;
+    height: 10%;
+    border-radius: 15px;
+}
+button:hover{
+    background-color: blue;
+    transition: 0.6s;
+}
+.proceed{
+    text-decoration: none;
+    color: white;
+}
+
+.info-box{
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    line-height: 30px;
+    margin-top: 50px;
+}
+.description{
+    display: inline-block;
+    width: 50%;
+}
+
+.description p{
+    text-indent: 30px;
+    margin-left: 50px;
+}
+.description h3{
+    text-indent: 30px;
+}
+
+.specs ul li{
+    text-indent: 30px;
+    margin-left: 50px;
+}
+
+.container{
+    margin-top: 90px;
+    margin-left: 23%;
+    position: relative;
+    width: 40%;
+}
+
+.pics{
+    width: 100%;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: silver;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 11.11%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }

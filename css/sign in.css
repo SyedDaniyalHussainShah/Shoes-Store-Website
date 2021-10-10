@@ -1,0 +1,171 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.logo{
+  width: 100px;
+  
+}
+body
+{
+  background-image: url("images/covercc.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+
+.header
+{
+    background-color:#393e46;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    border-bottom: white;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+  
+}
+.header ul
+{
+    display: inline-flex;
+    list-style: none;
+}
+.header ul li
+{
+    width:150px;
+    margin:15px;
+    padding:15px;
+}
+.header ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.current, .header ul li:hover
+{
+    background-color: darkgrey;
+    border-radius: 10px;
+}
+.menu
+{
+     display: none;
+ }
+ .header ul li:hover .menu ul li:hover{
+    border-bottom-style: solid;
+    border-bottom-color: black ;
+ }
+.header ul li:hover .menu
+{
+    display: block;
+    position: absolute;
+    background-color:#393e46;
+    margin-top: 15px;
+    margin-left: -15px;
+    z-index: 2;
+}
+.header ul li:hover .menu ul
+{
+    display: block;
+    margin: 10px;
+}
+.header ul li:hover .menu ul li
+{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    color: white;
+}
+
+.header ul li:hover .menu ul li a:hover
+{
+    color:black;
+}
+.box{
+ 
+  max-width: 350px;
+  border-radius: 20px; 
+  margin: auto; 
+  background: rgba(0, 0, 0, 0.88);
+  box-sizing: border-box;
+  padding: 40px;
+  color: white;
+  margin-top: 100px;  
+}
+.box h2{
+  font-weight: 500;
+  text-align: center; 
+}
+input[type = "text"], input[type = "password"]{
+  background: none;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #60adde;
+  padding: 10px 10px;
+  width: 250px;
+  color: white;
+  outline: none;
+  border-radius: 15px;
+  transition: 0.8s;
+}
+input[type = "text"]:focus, input[type = "password"]:focus{
+
+  border-left:35px solid #60adde;
+}
+input[type = "submit"]{
+  width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background: #60adde;
+    opacity: 0.7;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    transition: 0.6s;
+ 
+}
+input[type = "submit"]:hover{
+    background: #003366;
+    opacity: 0.7;
+}
+.box #email_characters,.box #password_characters{
+    margin-top: -5px;
+    margin-left: 60px;
+    color: red;
+    background-color: transparent;
+    width: 65%;
+    display: none;
+}
+.box #email_blanked,.box #password_blanked{
+    margin-top: -15px;
+    margin-left: 60px;
+    color: red;
+    background-color: transparent;
+    width: 65%;
+    display: none;
+}
+.box #email_attherate{
+    margin-top: -15px;
+    margin-left: 60px;
+    color: red;
+    background-color: transparent;
+    width: 65%;
+    display: none;
+}
+
+.box form a{
+  text-decoration: none;
+  color: palegreen;
+  margin-left: 30%;
+}
